@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <h1>Things To Do</h1>
+    <input type="text" class="search-text" placeholder="Filter todos" />
+    <label>
+      <input type="checkbox" class="hide-completed" />
+      Hide completed todos
+    </label>
+    <div class="todos"></div>
+    <form id="new-todo">
+      <input
+        type="text"
+        placeholder="Add a new task"
+        name="todoText"
+        autocomplete="off"
+      />
+      <button>Add</button>
+    </form>
+    <script src="todo-app.js"></script>
+  </body>
+</html>
