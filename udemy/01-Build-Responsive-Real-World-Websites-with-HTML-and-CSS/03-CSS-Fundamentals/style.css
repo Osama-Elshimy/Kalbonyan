@@ -5,10 +5,10 @@
 }
 
 /* PAGE SECTIONS */
-
 body {
-  color: #444444;
+  color: #444;
   font-family: sans-serif;
+
   border-top: 10px solid #1098ad;
   position: relative;
 }
@@ -21,7 +21,7 @@ body {
 }
 
 .main-header {
-  background-color: #efefef;
+  background-color: #f7f7f7;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -32,6 +32,7 @@ body {
 
 nav {
   font-size: 18px;
+  /* text-align: center; */
 }
 
 article {
@@ -40,18 +41,20 @@ article {
 
 .post-header {
   margin-bottom: 40px;
+  /* position: relative; */
 }
 
 aside {
-  background-color: #efefef;
+  background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
   padding: 50px 0;
   width: 500px;
 }
 
 /* SMALLER ELEMENTS */
-
 h1,
 h2,
 h3 {
@@ -67,12 +70,12 @@ h1 {
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
-  position: relative;
 }
 
 h3 {
   font-size: 30px;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -90,12 +93,13 @@ p {
 ul,
 ol {
   margin-left: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -104,6 +108,10 @@ li:last-child {
 
 /* footer p {
   font-size: 16px;
+} */
+
+/* article header p {
+  font-style: italic;
 } */
 
 #author {
@@ -120,9 +128,21 @@ li:last-child {
   font-weight: bold;
 }
 
-.related-list {
+/* ul {
+  list-style: none;
+} */
+
+.related {
   list-style: none;
 }
+
+body {
+  /* background-color: orangered; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
 
 li:first-child {
   font-weight: bold;
@@ -132,11 +152,11 @@ li:last-child {
   font-style: italic;
 }
 
-/* li: nth-child(even) {
-  color: red;
-} */
+li:nth-child(even) {
+  /* color: red; */
+}
 
-/* Missconception: this won't work! */
+/* Misconception: this won't work! */
 article p:first-child {
   color: red;
 }
@@ -148,6 +168,7 @@ a:link {
 }
 
 a:visited {
+  /* color: #777; */
   color: #1098ad;
 }
 
@@ -161,6 +182,7 @@ a:active {
   background-color: black;
   font-style: italic;
 }
+/* LVHA */
 
 .post-img {
   width: 100%;
@@ -168,6 +190,12 @@ a:active {
 }
 
 nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
@@ -183,6 +211,8 @@ button {
   cursor: pointer;
 
   position: absolute;
+  /* top: 50px;
+  left: 50px; */
   bottom: 50px;
   right: 50px;
 }
@@ -192,12 +222,16 @@ h1::first-letter {
   margin-right: 5px;
 }
 
-/* ADJACENT SIBLING */
-/* h3 + p::first-line {
-  color: red;
-} */
+h3 + p::first-line {
+  /* color: red; */
+}
 
-h2::after {
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::before {
   content: "TOP";
   background-color: #ffe70e;
   color: #444;
@@ -209,3 +243,25 @@ h2::after {
   top: -10px;
   right: -25px;
 }
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
